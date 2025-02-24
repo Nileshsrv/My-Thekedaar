@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Thekedaar</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -33,7 +33,9 @@
   <!-- About Section -->
   <section id="about" class="about">
     <h2>About Us</h2>
-    <p>My Thekedaar is a platform where you can find verified laborers and contractors for construction purposes. We ensure quality, security, and budget-friendly services.</p>
+    <div class="ab">
+      <p>My Thekedaar is a platform where you can find verified laborers and contractors for construction purposes. We ensure quality, security, and budget-friendly services.</p>
+    </div>
   </section>
 
   <!-- Features Section -->
@@ -77,22 +79,31 @@
         <button class="carousel-button next">&#10095;</button>
       </div>
   </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Reach out to us for any queries or support.</p>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>Reach out to us for any queries or support.</p>
+  <div class="cn">
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" id="name" required>
+      <input type="email" name="email" placeholder="Your Email" id="email" required>
+      <textarea name="message" placeholder="Your Message" id="message" required></textarea>
+      <input type="submit" id="button" value="Send Email" >
     </form>
-  </section>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('u3VNYB1aRBFhjVGig')
+</script>
+  </div>
+</section>
+
+
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2023 My Thekedaar. All rights reserved.</p>
+    <p>&copy; 2025 My Thekedaar. All rights reserved.</p>
     <div class="social-links">
       <a href="#">Facebook</a>
       <a href="#">Twitter</a>
